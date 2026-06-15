@@ -1,22 +1,6 @@
 import { MessageSquare, Phone, CheckCircle, ShieldAlert, Zap } from 'lucide-react';
 
 export default function ConsultationMediums() {
-  const scrollToBooking = () => {
-    const element = document.getElementById('booking');
-    if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   return (
     <section className="mediums-section" id="mediums">
       <div className="container">
@@ -56,9 +40,6 @@ export default function ConsultationMediums() {
                 <span><strong>File sharing:</strong> Send transcripts, reports, or educational report cards instantly.</span>
               </li>
             </ul>
-            <button onClick={scrollToBooking} className="btn btn-secondary" style={{ marginTop: 'auto' }}>
-              Choose Chat Consultation
-            </button>
           </div>
 
           {/* Audio Consultation */}
@@ -88,9 +69,6 @@ export default function ConsultationMediums() {
                 <span><strong>Hands-free:</strong> Sit back, relax, and speak freely while focusing on the conversation.</span>
               </li>
             </ul>
-            <button onClick={scrollToBooking} className="btn btn-primary" style={{ marginTop: 'auto' }}>
-              Choose Audio Consultation
-            </button>
           </div>
         </div>
 

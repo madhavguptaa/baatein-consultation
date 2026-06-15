@@ -1,22 +1,6 @@
 import { ShieldAlert, Award, RefreshCw, Zap } from 'lucide-react';
 
 export default function WhyUs() {
-  const scrollToBooking = () => {
-    const element = document.getElementById('booking');
-    if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   const benefits = [
     {
       icon: <ShieldAlert size={28} className="benefit-icon" />,
@@ -53,9 +37,6 @@ export default function WhyUs() {
           <p style={{ fontSize: '15px', marginBottom: '32px', maxWidth: '500px' }}>
             Opening up about education bottlenecks, marriage adjustments, or emotional stress requires safety. We structure our platform, data access, and consultants around the single promise of absolute confidentiality.
           </p>
-          <button onClick={scrollToBooking} className="btn btn-outline-gold">
-            Schedule a Private Session
-          </button>
         </div>
 
         <div className="why-us-benefits">

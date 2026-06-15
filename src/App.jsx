@@ -1,27 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import ConsultationMediums from './components/ConsultationMediums';
-import Services from './components/Services';
-import HowItWorks from './components/HowItWorks';
-import WhyUs from './components/WhyUs';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Terms from './pages/Terms';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import DeleteAccount from './pages/DeleteAccount';
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <ConsultationMediums />
-        <HowItWorks />
-        <WhyUs />
-        <Testimonials />
-        <FAQ />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/terms-and-conditions" element={<Terms />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/return-and-refund-policy" element={<RefundPolicy />} />
+        <Route path="/delete-account-policy" element={<DeleteAccount />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Star } from 'lucide-react';
 
 export default function Testimonials() {
@@ -46,6 +47,15 @@ export default function Testimonials() {
     }
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % reviews.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [reviews.length]);
+
   return (
     <section className="testimonials-section" id="testimonials">
       <div className="container">
@@ -57,26 +67,50 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="testimonials-grid">
-          {reviews.map((review, index) => (
-            <div className="testimonial-card" key={index}>
-              <div className="testimonial-stars">
-                {[...Array(review.stars)].map((_, i) => (
-                  <Star key={i} size={16} fill="currentColor" />
-                ))}
-              </div>
-              <p className="testimonial-quote">"{review.quote}"</p>
-              <div className="testimonial-author">
-                <div className="author-avatar">
-                  {review.author.charAt(0)}
+        <div style={{ position: 'relative', overflow: 'hidden', maxWidth: '800px', margin: '0 auto', paddingBottom: '16px' }}>
+          <div style={{ display: 'flex', transition: 'transform 0.6s ease-in-out', transform: `translateX(-${currentIndex * 100}%)` }}>
+            {reviews.map((review, index) => (
+              <div key={index} style={{ minWidth: '100%', padding: '0 16px', boxSizing: 'border-box' }}>
+                <div className="testimonial-card" style={{ height: '100%', margin: '0 auto' }}>
+                  <div className="testimonial-stars">
+                    {[...Array(review.stars)].map((_, i) => (
+                      <Star key={i} size={16} fill="currentColor" />
+                    ))}
+                  </div>
+                  <p className="testimonial-quote">"{review.quote}"</p>
+                  <div className="testimonial-author">
+                    <div className="author-avatar">
+                      {review.author.charAt(0)}
+                    </div>
+                    <div className="author-info">
+                      <h4>{review.author}</h4>
+                      <span>{review.location} — {review.type}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="author-info">
-                  <h4>{review.author}</h4>
-                  <span>{review.location} — {review.type}</span>
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '32px' }}>
+            {reviews.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentIndex(i)}
+                style={{
+                  width: '10px',
+                  height: '10px',
+                  borderRadius: '50%',
+                  backgroundColor: currentIndex === i ? 'var(--color-brand-primary)' : 'var(--color-border)',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: 0,
+                  transition: 'background-color 0.3s ease'
+                }}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

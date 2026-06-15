@@ -1,21 +1,6 @@
 import { GraduationCap, Heart, Briefcase, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function Services() {
-  const scrollToBooking = () => {
-    const element = document.getElementById('booking');
-    if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
 
   const servicesData = [
     {
@@ -70,12 +55,6 @@ export default function Services() {
                     {tag}
                   </span>
                 ))}
-              </div>
-
-              <div style={{ marginTop: 'auto', paddingTop: '16px' }}>
-                <a onClick={scrollToBooking} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '14px', fontWeight: '600', color: 'var(--color-brand-primary)', textDecoration: 'none', cursor: 'pointer' }}>
-                  Book this category <ArrowRight size={14} />
-                </a>
               </div>
             </div>
           ))}
