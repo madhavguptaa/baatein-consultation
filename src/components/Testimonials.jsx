@@ -1,0 +1,84 @@
+import { Star } from 'lucide-react';
+
+export default function Testimonials() {
+  const reviews = [
+    {
+      stars: 5,
+      quote: "The academic guidance session helped my daughter select her high school streams without stress. The consultant laid out concrete job profiles and college requirements. Having it on an audio call kept it highly personal.",
+      author: "Sneha R.",
+      location: "Kolkata",
+      type: "Education Consultation"
+    },
+    {
+      stars: 5,
+      quote: "We were stuck in a repeating loop of communication blocks before our marriage. The counselor gave us structural dialogue tasks in our chat session that helped clear assumptions. The chat format felt very safe.",
+      author: "Alok & Meera",
+      location: "Noida",
+      type: "Relationship Consultation"
+    },
+    {
+      stars: 5,
+      quote: "I booked a session during a difficult career redundancy. The advisor helped me list transferable skills and address my interview anxiety with actionable tips. It restored my confidence.",
+      author: "Vikram K.",
+      location: "Pune",
+      type: "Career Transition"
+    },
+    {
+      stars: 5,
+      quote: "Transitioning to a new city and job was causing me severe adjustment stress. The personal wellness advisor gave me concrete habit frameworks that helped me rebuild my daily routine and boundary settings.",
+      author: "Priya M.",
+      location: "Chennai",
+      type: "Personal Growth Advice"
+    },
+    {
+      stars: 5,
+      quote: "Got complete clarity on my university application timeline and essay structure. The counselor had extensive knowledge of European admission procedures. Highly professional guidance.",
+      author: "Rajat B.",
+      location: "Hyderabad",
+      type: "Higher Education Advisory"
+    },
+    {
+      stars: 5,
+      quote: "Highly discreet chat counseling that helped me handle high-stress management responsibilities. Being able to text quietly from my workspace during lunch breaks was incredibly convenient.",
+      author: "Tanvi D.",
+      location: "Ahmedabad",
+      type: "Wellness & Stress Advice"
+    }
+  ];
+
+  return (
+    <section className="testimonials-section" id="testimonials">
+      <div className="container">
+        <div className="section-header">
+          <span className="sub">Client Reviews</span>
+          <h2>Feedback from Our Sessions</h2>
+          <p>
+            Read how we have helped students, couples, and professionals find actionable clarity and direction in their lives.
+          </p>
+        </div>
+
+        <div className="testimonials-grid">
+          {reviews.map((review, index) => (
+            <div className="testimonial-card" key={index}>
+              <div className="testimonial-stars">
+                {[...Array(review.stars)].map((_, i) => (
+                  <Star key={i} size={16} fill="currentColor" />
+                ))}
+              </div>
+              <p className="testimonial-quote">"{review.quote}"</p>
+              <div className="testimonial-author">
+                <div className="author-avatar">
+                  {review.author.charAt(0)}
+                </div>
+                <div className="author-info">
+                  <h4>{review.author}</h4>
+                  <span>{review.location} — {review.type}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
