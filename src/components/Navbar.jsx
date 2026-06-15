@@ -103,9 +103,14 @@ export default function Navbar() {
                 FAQ
               </a>
             </li>
+            <li>
+              <Link to="/contact-us" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+                Support
+              </Link>
+            </li>
             <li className="nav-cta-btn">
               <button onClick={() => scrollToSection('how-it-works')} className="btn btn-primary" style={{ padding: '8px 20px', fontSize: '14px' }}>
-                <PhoneCall size={14} /> How to Book
+                <PhoneCall size={14} /> Connect Now
               </button>
             </li>
           </ul>

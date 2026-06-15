@@ -1,21 +1,21 @@
-import { CheckSquare, Calendar, ShieldCheck } from 'lucide-react';
+import { CheckSquare, Zap, ShieldCheck } from 'lucide-react';
 
 export default function HowItWorks() {
   const steps = [
     {
       icon: <CheckSquare size={24} />,
-      title: '1. Select Category & Medium',
-      description: 'Choose your area of need (e.g., Education, Marriage) and your preferred format (Audio Call or secure Private Chat).'
+      title: '1. Select Domain & Medium',
+      description: 'Choose your area of need (e.g., Education, Relationship) and your preferred format (Private Chat or Audio Call).'
     },
     {
-      icon: <Calendar size={24} />,
-      title: '2. Select Date & Time',
-      description: 'Select a slot that works best for your schedule. Our calendar automatically shows real-time specialist availability.'
+      icon: <Zap size={24} />,
+      title: '2. Connect Instantly',
+      description: 'Get matched immediately with an active, online specialist. No calendars, no appointments, and no waiting required.'
     },
     {
       icon: <ShieldCheck size={24} />,
-      title: '3. Connect Securely',
-      description: 'Use the unique, encrypted session link sent to you to start your secure chat room or direct audio call. No downloads required.'
+      title: '3. Consult Anonymously',
+      description: 'Engage in a 100% encrypted, secure session. Your personal phone number and identity are never shared.'
     }
   ];
 
@@ -26,7 +26,7 @@ export default function HowItWorks() {
           <span className="sub">Three-Step Process</span>
           <h2>How Baatein Works</h2>
           <p>
-            We have designed a streamlined, secure booking experience. Get matched with professional support in less than five minutes.
+            We have designed a streamlined, secure system to connect you with professional support instantly when you need it.
           </p>
         </div>
 

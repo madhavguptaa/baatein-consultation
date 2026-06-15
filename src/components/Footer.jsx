@@ -89,14 +89,18 @@ export default function Footer() {
 
           <div className="footer-column">
             <h4>Contact Info</h4>
-            <ul className="footer-links" style={{ pointerEvents: 'none' }}>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#BAB7AC', fontSize: '14px' }}>
-                <Mail size={16} style={{ color: 'var(--color-brand-accent)' }} />
-                <span>info@baatein.in</span>
+            <ul className="footer-links">
+              <li>
+                <Link to="/contact-us" className="footer-link" onClick={() => window.scrollTo(0,0)} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Mail size={16} style={{ color: 'var(--color-brand-accent)' }} />
+                  <span>info@baatein.in</span>
+                </Link>
               </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', color: '#BAB7AC', fontSize: '14px' }}>
-                <MapPin size={16} style={{ color: 'var(--color-brand-accent)', marginTop: '3px', flexShrink: 0 }} />
-                <span>Noida, Uttar Pradesh, India</span>
+              <li>
+                <Link to="/contact-us" className="footer-link" onClick={() => window.scrollTo(0,0)} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                  <MapPin size={16} style={{ color: 'var(--color-brand-accent)', marginTop: '3px', flexShrink: 0 }} />
+                  <span>Noida, Uttar Pradesh, India</span>
+                </Link>
               </li>
             </ul>
           </div>

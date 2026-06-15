@@ -15,11 +15,11 @@ export default function FAQ() {
     },
     {
       question: "How are the consultation specialists vetted?",
-      answer: "We verify academic backgrounds, licenses, and clinical experience. Each consultant goes through detailed video-based simulations and case reviews before joining our booking platform."
+      answer: "We verify academic backgrounds, licenses, and clinical experience. Each consultant goes through detailed video-based simulations and case reviews before joining our consultation platform."
     },
     {
-      question: "Can I reschedule my session?",
-      answer: "Yes. You can reschedule your session by notifying your consultant or clicking the management link in your confirmation email at least 12 hours prior to the scheduled start time."
+      question: "How do I start a consultation?",
+      answer: "Simply select your desired category (such as career or relationship) and choice of medium (audio or chat), and you will be instantly connected to an online specialist for an immediate session."
     },
     {
       question: "Do you offer emergency crisis counseling?",
@@ -42,7 +42,7 @@ export default function FAQ() {
           <span className="sub">Common Questions</span>
           <h2>Frequently Asked Questions</h2>
           <p>
-            Find quick answers regarding our privacy safeguards, booking operations, and the credentials of our consultants.
+            Find quick answers regarding our privacy safeguards, platform operations, and the credentials of our consultants.
           </p>
         </div>
 

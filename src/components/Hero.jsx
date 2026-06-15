@@ -1,7 +1,7 @@
 import { ShieldCheck, MessageSquare, Volume2 } from 'lucide-react';
 
 export default function Hero() {
-  const scrollToBooking = () => {
+  const scrollToHowItWorks = () => {
     const element = document.getElementById('how-it-works');
     if (element) {
       const offset = 80;
@@ -44,8 +44,8 @@ export default function Hero() {
             Every path has its questions. We provide confidential guidance via secure audio calls and private chats to help you navigate life's transitions—whether it is education, relationship harmony, career growth, or personal wellness.
           </p>
           <div className="hero-ctas">
-            <button onClick={scrollToBooking} className="btn btn-primary">
-              Learn How to Book
+            <button onClick={scrollToHowItWorks} className="btn btn-primary">
+              How It Works
             </button>
             <button onClick={scrollToServices} className="btn btn-secondary">
               Explore Services

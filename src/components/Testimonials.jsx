@@ -19,7 +19,7 @@ export default function Testimonials() {
     },
     {
       stars: 5,
-      quote: "I booked a session during a difficult career redundancy. The advisor helped me list transferable skills and address my interview anxiety with actionable tips. It restored my confidence.",
+      quote: "I started a consultation during a difficult career redundancy. The advisor helped me list transferable skills and address my interview anxiety with actionable tips. It restored my confidence.",
       author: "Vikram K.",
       location: "Pune",
       type: "Career Transition"

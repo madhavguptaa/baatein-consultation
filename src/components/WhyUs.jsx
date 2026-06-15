@@ -5,7 +5,7 @@ export default function WhyUs() {
     {
       icon: <ShieldAlert size={28} className="benefit-icon" />,
       title: 'Absolute Privacy',
-      description: 'End-to-end encrypted chats and call lines. Book under a pseudonym if you prefer absolute anonymity.'
+      description: 'End-to-end encrypted chats and call lines. Connect under a pseudonym if you prefer absolute anonymity.'
     },
     {
       icon: <Award size={28} className="benefit-icon" />,
@@ -19,8 +19,8 @@ export default function WhyUs() {
     },
     {
       icon: <Zap size={28} className="benefit-icon" />,
-      title: 'No Long Waitlists',
-      description: 'Avoid months of wait times. Schedule your sessions when you need them, including same-week slots.'
+      title: 'Instant Connection',
+      description: 'Avoid weeks of waiting or appointments. Connect immediately with an active specialist the moment you need support.'
     }
   ];
 
