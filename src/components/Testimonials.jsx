@@ -8,42 +8,48 @@ export default function Testimonials() {
       quote: "The academic guidance session helped my daughter select her high school streams without stress. The consultant laid out concrete job profiles and college requirements. Having it on an audio call kept it highly personal.",
       author: "Sneha R.",
       location: "Kolkata",
-      type: "Education Consultation"
+      type: "Education Consultation",
+      image: "/sneha.png"
     },
     {
       stars: 5,
       quote: "We were stuck in a repeating loop of communication blocks before our marriage. The counselor gave us structural dialogue tasks in our chat session that helped clear assumptions. The chat format felt very safe.",
       author: "Alok & Meera",
       location: "Noida",
-      type: "Relationship Consultation"
+      type: "Relationship Consultation",
+      image: "/alok-meera.png"
     },
     {
       stars: 5,
       quote: "I started a consultation during a difficult career redundancy. The advisor helped me list transferable skills and address my interview anxiety with actionable tips. It restored my confidence.",
       author: "Vikram K.",
       location: "Pune",
-      type: "Career Transition"
+      type: "Career Transition",
+      image: "/vikram.png"
     },
     {
       stars: 5,
       quote: "Transitioning to a new city and job was causing me severe adjustment stress. The personal wellness advisor gave me concrete habit frameworks that helped me rebuild my daily routine and boundary settings.",
       author: "Priya M.",
       location: "Chennai",
-      type: "Personal Growth Advice"
+      type: "Personal Growth Advice",
+      image: "/priya.png"
     },
     {
       stars: 5,
       quote: "Got complete clarity on my university application timeline and essay structure. The counselor had extensive knowledge of European admission procedures. Highly professional guidance.",
       author: "Rajat B.",
       location: "Hyderabad",
-      type: "Higher Education Advisory"
+      type: "Higher Education Advisory",
+      image: "/rajat.png"
     },
     {
       stars: 5,
       quote: "Highly discreet chat counseling that helped me handle high-stress management responsibilities. Being able to text quietly from my workspace during lunch breaks was incredibly convenient.",
       author: "Tanvi D.",
       location: "Ahmedabad",
-      type: "Wellness & Stress Advice"
+      type: "Wellness & Stress Advice",
+      image: "/tanvi.png"
     }
   ];
 
@@ -79,8 +85,12 @@ export default function Testimonials() {
                   </div>
                   <p className="testimonial-quote">"{review.quote}"</p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">
-                      {review.author.charAt(0)}
+                    <div className="author-avatar" style={{ overflow: 'hidden', padding: 0 }}>
+                      <img 
+                        src={review.image} 
+                        alt={review.author} 
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                      />
                     </div>
                     <div className="author-info">
                       <h4>{review.author}</h4>

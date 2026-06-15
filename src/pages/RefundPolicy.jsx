@@ -197,9 +197,8 @@ export default function RefundPolicy() {
         <p>
           For refund-related inquiries, please contact:<br />
           <strong>Elysion Softwares Pvt. Ltd.</strong><br />
-          Email: <a href="mailto:info@baatein.in">info@baatein.in</a>
+          Email: <a href="mailto:elysionsoftwares@gmail.com">elysionsoftwares@gmail.com</a>
         </p>
-        <p>Please include:</p>
         <ul>
           <li>Registered mobile number</li>
           <li>Transaction ID</li>

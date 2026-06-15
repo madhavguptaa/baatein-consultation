@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
         <p>
           Baatein Consultation is operated by:<br />
           <strong>Elysion Softwares Pvt. Ltd.</strong><br />
-          Email: <a href="mailto:info@baatein.in">info@baatein.in</a>
+          Email: <a href="mailto:elysionsoftwares@gmail.com">elysionsoftwares@gmail.com</a>
         </p>
         <p>
           For any privacy-related concerns, data requests, or account-related issues, you may contact us at the email address listed above.
@@ -217,7 +217,7 @@ export default function PrivacyPolicy() {
           <li>Withdraw consent</li>
         </ul>
         <p>
-          Requests may be submitted to: <a href="mailto:info@baatein.in">info@baatein.in</a>
+          Requests may be submitted to: <a href="mailto:elysionsoftwares@gmail.com">elysionsoftwares@gmail.com</a>
         </p>
 
         <h2>11. Children's Privacy</h2>
@@ -239,7 +239,7 @@ export default function PrivacyPolicy() {
         <p>
           For questions regarding this Privacy Policy:<br />
           <strong>Elysion Softwares Pvt. Ltd.</strong><br />
-          Email: <a href="mailto:info@baatein.in">info@baatein.in</a>
+          Email: <a href="mailto:elysionsoftwares@gmail.com">elysionsoftwares@gmail.com</a>
         </p>
       </div>
     </div>

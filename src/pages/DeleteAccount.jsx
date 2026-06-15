@@ -164,7 +164,7 @@ export default function DeleteAccount() {
         <p>
           If you are unable to delete your account through the app or require assistance, contact:<br />
           <strong>Elysion Softwares Pvt. Ltd.</strong><br />
-          Email: <a href="mailto:info@baatein.in">info@baatein.in</a>
+          Email: <a href="mailto:elysionsoftwares@gmail.com">elysionsoftwares@gmail.com</a>
         </p>
         <p>Please include:</p>
         <ul>

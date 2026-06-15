@@ -61,19 +61,10 @@ export default function Footer() {
           <div className="footer-column">
             <h4>Consultations</h4>
             <ul className="footer-links">
-              <li><a onClick={() => scrollToSection('services')} className="footer-link">Education Advisory</a></li>
-              <li><a onClick={() => scrollToSection('services')} className="footer-link">Marriage & Relationships</a></li>
-              <li><a onClick={() => scrollToSection('services')} className="footer-link">Career Progression</a></li>
-              <li><a onClick={() => scrollToSection('services')} className="footer-link">Personal Development</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>Resources</h4>
-            <ul className="footer-links">
-              <li><a onClick={() => scrollToSection('how-it-works')} className="footer-link">Our Process</a></li>
-              <li><a onClick={() => scrollToSection('mediums')} className="footer-link">Audio vs Chat</a></li>
-              <li><a onClick={() => scrollToSection('faq')} className="footer-link">FAQs</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="footer-link" style={{ cursor: 'pointer' }}>Education Advisory</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="footer-link" style={{ cursor: 'pointer' }}>Marriage & Relationships</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="footer-link" style={{ cursor: 'pointer' }}>Career Progression</a></li>
+              <li><a onClick={() => scrollToSection('services')} className="footer-link" style={{ cursor: 'pointer' }}>Personal Development</a></li>
             </ul>
           </div>
 
@@ -84,6 +75,7 @@ export default function Footer() {
               <li><Link to="/privacy-policy" className="footer-link" onClick={() => window.scrollTo(0,0)}>Privacy Policy</Link></li>
               <li><Link to="/return-and-refund-policy" className="footer-link" onClick={() => window.scrollTo(0,0)}>Return and Refund Policy</Link></li>
               <li><Link to="/delete-account-policy" className="footer-link" onClick={() => window.scrollTo(0,0)}>Delete Account Policy</Link></li>
+              <li><Link to="/contact-us" className="footer-link" onClick={() => window.scrollTo(0,0)}>Contact & Support</Link></li>
             </ul>
           </div>
 
@@ -93,7 +85,7 @@ export default function Footer() {
               <li>
                 <Link to="/contact-us" className="footer-link" onClick={() => window.scrollTo(0,0)} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <Mail size={16} style={{ color: 'var(--color-brand-accent)' }} />
-                  <span>info@baatein.in</span>
+                  <span>elysionsoftwares@gmail.com</span>
                 </Link>
               </li>
               <li>

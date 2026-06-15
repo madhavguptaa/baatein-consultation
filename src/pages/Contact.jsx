@@ -13,7 +13,7 @@ export default function Contact() {
         <h2>Support Channels</h2>
         <ul>
           <li>
-            <strong>Email Support:</strong> <a href="mailto:info@baatein.in">info@baatein.in</a>
+            <strong>Email Support:</strong> <a href="mailto:elysionsoftwares@gmail.com">elysionsoftwares@gmail.com</a>
             <br />
             <span style={{ fontSize: '13px', color: 'var(--color-text-light)' }}>
               (Average response time: 24 to 48 hours)
@@ -32,7 +32,7 @@ export default function Contact() {
 
         <h2>Consultant Opportunities</h2>
         <p>
-          If you are a coach, advisor, listener, astrologer, or professional consultant interested in joining our platform, please write to us at <a href="mailto:info@baatein.in">info@baatein.in</a> with your detailed resume and credentials.
+          If you are a coach, advisor, listener, astrologer, or professional consultant interested in joining our platform, please write to us at <a href="mailto:elysionsoftwares@gmail.com">elysionsoftwares@gmail.com</a> with your detailed resume and credentials.
         </p>
 
         <h2>Working Hours</h2>
