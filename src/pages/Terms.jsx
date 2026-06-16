@@ -18,7 +18,7 @@ export default function Terms() {
 
         <h2>About Baatein Consultation</h2>
         <p>
-          Baatein Consultation is a platform that connects users with coaches, listeners, consultants, advisors, astrologers, and other experts for chat, voice call, video call, and consultation services.
+          Baatein Consultation is a platform that connects users with coaches, listeners, consultants, advisors, astrologers, and other experts for chat, voice call, and consultation services.
         </p>
         <p>
           The Services are intended for informational, educational, guidance, emotional support, and consultation purposes only.
@@ -60,8 +60,6 @@ export default function Terms() {
         <ul>
           <li>Text chat</li>
           <li>Voice calls</li>
-          <li>Video calls</li>
-          <li>Live consultation sessions</li>
         </ul>
         <p>
           Consultants operate independently and are solely responsible for the information, guidance, or opinions they provide.

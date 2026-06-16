@@ -18,8 +18,6 @@ export default function RefundPolicy() {
         <ul>
           <li>Chat Consultations</li>
           <li>Voice Calls</li>
-          <li>Video Calls</li>
-          <li>Astrology Consultations</li>
           <li>Coaching Sessions</li>
           <li>Listener Sessions</li>
           <li>Expert Advisory Services</li>
